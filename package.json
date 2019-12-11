@@ -1,0 +1,33 @@
+{
+  "name": "@liqd-js/timer",
+  "description": "Timer Library",
+  "version": "1.0.0",
+  "author": "radixxko",
+  "license": "MIT",
+  "main": "lib/timer.js",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "test": "nyc mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/liqd-js/timer.git"
+  },
+  "keywords": [
+    "timer",
+    "liqd-js",
+    "liqd"
+  ],
+  "dependencies": {
+    "@liqd-js/ds-heap": "^1.0.1"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.6",
+    "liqd-flow": "^1.2.8",
+    "mocha": "^5.0.4",
+    "nyc": "^14.1.1"
+  }
+}
